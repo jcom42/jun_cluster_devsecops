@@ -2,6 +2,7 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 COPY package*.json ./
+RUN apk update && apk add busybox=1.36.1-r29
 RUN npm ci
 COPY . .
 RUN npm run build
