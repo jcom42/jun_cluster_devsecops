@@ -1,5 +1,5 @@
 # Build stage
-FROM node:23-alpine3.21 AS build
+FROM node:23-bookworm AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
