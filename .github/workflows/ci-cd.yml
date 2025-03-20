@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '23'
           cache: 'npm'
       
       - name: Install dependencies
@@ -38,7 +38,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '23'
           cache: 'npm'
       
       - name: Install dependencies
@@ -58,7 +58,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '23'
           cache: 'npm'
       
       - name: Install dependencies
@@ -128,8 +128,8 @@ jobs:
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
-          #vuln-type: '' #removido scan das bibliotecas os,library
-          #severity: 'CRITICAL,HIGH'
+          vuln-type: '' #removido scan das bibliotecas os,library
+          severity: 'CRITICAL,HIGH'
       
       - name: Push Docker image
         uses: docker/build-push-action@v5
