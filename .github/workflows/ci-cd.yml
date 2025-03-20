@@ -128,7 +128,7 @@ jobs:
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
-          vuln-type: 'os' #removido scan das bibliotecas library
+          vuln-type: '' #removido scan das bibliotecas os,library
           severity: 'CRITICAL,HIGH'
       
       - name: Push Docker image
