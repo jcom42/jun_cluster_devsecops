@@ -60,3 +60,64 @@ Handling connection for 9000
 Handling connection for 9000
 E0319 16:40:56.651028  139867 portforward.go:424] "Unhandled Error" err="an error occurred forwarding 9000 -> 8080: error forwarding port 8080 to pod b030837fc7383e8d86ce655adb92c8afb7b9ce3f036fc97bf1d55c6fab5d3aec, uid : failed to execute portforward in network namespace \"/var/run/netns/cni-d52900fa-30d1-2b68-8ffa-2ee7d0e6a9f7\": writeto tcp4 127.0.0.1:56644->127.0.0.1:8080: read tcp4 127.0.0.1:56644->127.0.0.1:8080: read: connection reset by peer"
 error: lost connection to pod
+Forwarding from 0.0.0.0:9000 -> 8080
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+E0321 19:55:38.128132  199430 portforward.go:404] "Unhandled Error" err="error copying from local connection to remote stream: writeto tcp4 10.0.0.168:9000->87.236.176.252:47241: read tcp4 10.0.0.168:9000->87.236.176.252:47241: read: connection reset by peer"
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+E0321 19:55:40.254763  199430 portforward.go:404] "Unhandled Error" err="error copying from local connection to remote stream: writeto tcp4 10.0.0.168:9000->87.236.176.15:44205: read tcp4 10.0.0.168:9000->87.236.176.15:44205: read: connection reset by peer"
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+E0321 19:59:00.298412  199430 portforward.go:404] "Unhandled Error" err="error copying from local connection to remote stream: writeto tcp4 10.0.0.168:9000->87.236.176.217:56321: read tcp4 10.0.0.168:9000->87.236.176.217:56321: read: connection reset by peer"
+Handling connection for 9000
+Handling connection for 9000
+Handling connection for 9000
+E0321 20:00:40.435257  199430 portforward.go:404] "Unhandled Error" err="error copying from local connection to remote stream: writeto tcp4 10.0.0.168:9000->87.236.176.203:43635: read tcp4 10.0.0.168:9000->87.236.176.203:43635: read: connection reset by peer"
+Handling connection for 9000
+E0321 20:01:09.517570  199430 portforward.go:424] "Unhandled Error" err="an error occurred forwarding 9000 -> 8080: error forwarding port 8080 to pod b030837fc7383e8d86ce655adb92c8afb7b9ce3f036fc97bf1d55c6fab5d3aec, uid : failed to execute portforward in network namespace \"/var/run/netns/cni-d52900fa-30d1-2b68-8ffa-2ee7d0e6a9f7\": writeto tcp4 127.0.0.1:38888->127.0.0.1:8080: read tcp4 127.0.0.1:38888->127.0.0.1:8080: read: connection reset by peer"
+error: lost connection to pod

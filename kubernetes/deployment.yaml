@@ -41,4 +41,5 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 5
     imagePullSecrets:
-      - name: github-container-registry
+      #- name: github-container-registry
+       - name: github-jun-devsecops
