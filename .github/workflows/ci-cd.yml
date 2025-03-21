@@ -11,7 +11,7 @@ on:
 jobs:
   test:
     name: Unit Testing
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
 
   lint:
     name: Static Code Analysis
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -49,7 +49,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: [test, lint]
     steps:
       - name: Checkout code
@@ -75,7 +75,7 @@ jobs:
 
   docker:
     name: Docker Build and Push
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: [build]
     env:
       REGISTRY: ghcr.io
@@ -145,7 +145,7 @@ jobs:
 
   update-k8s:
     name: Update Kubernetes Deployment
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     needs: [docker]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
