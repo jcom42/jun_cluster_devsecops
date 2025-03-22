@@ -41,4 +41,4 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 5
       imagePullSecrets:
-      - name: jcom42
+      - name: token2
