@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: jogo-da-velha
-        image: ghcr.io/jcom42/jun_cluster_devsecops:sha-944a2b91fc755762be52eb5a615439e9c0cedc61
+        image: ghcr.io/jcom42/jun_cluster_devsecops:sha-1ff8d3d6df767818184f5790a6ac2ce8ef4870a7
         # Image will be automatically updated by CI/CD pipeline
         imagePullPolicy: Always
         ports:
