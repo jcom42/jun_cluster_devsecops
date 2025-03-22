@@ -1,33 +1,38 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tic-tac-toe
+  name: jogo-da-velha
   labels:
-    app: tic-tac-toe
+    app: jogo-da-velha
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: tic-tac-toe
+      app: jogo-da-velha
   template:
     metadata:
       labels:
-        app: tic-tac-toe
+        app: jogo-da-velha
     spec:
       containers:
+<<<<<<< HEAD
       - name: tic-tac-toe
         image: ghcr.io/jcom42/jun_cluster_devsecops:sha-ce066654dda4e0e5991b7797161e5db1554b74e1
+=======
+      - name: jogo-da-velha
+        image: ghcr.io/jcom42/jun_cluster_devsecops:sha-944a2b91fc755762be52eb5a615439e9c0cedc61
+>>>>>>> 38e4f6d (atualizado para 1 replicaset)
         # Image will be automatically updated by CI/CD pipeline
         imagePullPolicy: Always
         ports:
         - containerPort: 80
         resources:
           limits:
-            cpu: "0.5"
+            cpu: "0.9"
             memory: "512Mi"
           requests:
-            cpu: "0.2"
-            memory: "256Mi"
+            cpu: "0.5"
+            memory: "512Mi"
         livenessProbe:
           httpGet:
             path: /
